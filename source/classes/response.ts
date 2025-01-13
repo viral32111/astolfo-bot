@@ -39,6 +39,8 @@ export class ErrorResponse extends Response {
 			"content-type": "application/json"
 		}
 
+		console.error(`HTTP ${init.status.toString()}: ${json}`)
+
 		super(json, init)
 	}
 }

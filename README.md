@@ -1,6 +1,6 @@
-# Astolfo Bot
+# 🌸 Astolfo Bot
 
-Just a Discord application command (`/astolfo`) that posts a picture of Astolfo, running on [Cloudflare Workers](https://workers.cloudflare.com).
+A quick Discord application command (`/astolfo`) that posts a random picture of Astolfo using [the astolfo.rocks API](https://astolfo.rocks).
 
 ## License
 

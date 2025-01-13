@@ -8,7 +8,7 @@ import type { RegisterRouteFunction } from "~/types/route"
 const SECRET_NAMES = ["DISCORD_APPLICATION_BOT_TOKEN", "DISCORD_APPLICATION_OAUTH2_SECRET"]
 
 // GET /
-export const registerIndexRoute: RegisterRouteFunction = (router, path = Route.Index): void => {
+export const registerIndexRoute: RegisterRouteFunction = (router, path = Route.HelloWorld): void => {
 	router.get<IRequest, [Env, { props: object }]>(path, (request, env, context): Response => {
 		const environmentVariables = Object.fromEntries(
 			Object.entries(env)

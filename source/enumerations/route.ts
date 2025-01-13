@@ -1,4 +1,6 @@
 export enum Route {
-	Index = "/",
-	DiscordInteraction = "/discord/interaction"
+	HelloWorld = "/",
+
+	HandleDiscordInteraction = "/discord/interaction",
+	RegisterDiscordApplicationCommands = "/discord/register"
 }

@@ -2,12 +2,13 @@ import { InteractionResponseType, InteractionType, type APIInteractionResponse }
 import type { IRequest } from "itty-router"
 
 import { ErrorResponse, JsonResponse } from "~/classes/response"
+import { handleAstolfoApplicationCommand } from "~/commands/astolfo"
 import { Route } from "~/enumerations/route"
 import { verifyDiscordInteraction } from "~/helpers/discord/interaction"
 import type { RegisterRouteFunction } from "~/types/route"
 
 // POST /discord/interaction
-export const registerDiscordInteractionRoute: RegisterRouteFunction = (router, path = Route.DiscordInteraction): void => {
+export const registerHandleDiscordInteractionRoute: RegisterRouteFunction = (router, path = Route.HandleDiscordInteraction): void => {
 	router.post<IRequest, [Env, { props: object }]>(path, async (request, env) => {
 		try {
 			const interaction = await verifyDiscordInteraction(request, env)
@@ -22,14 +23,18 @@ export const registerDiscordInteractionRoute: RegisterRouteFunction = (router, p
 
 			const interactionName = interaction.data.name.toLowerCase()
 			switch (interactionName) {
-				case "astolfo": {
-					return new JsonResponse({
-						type: InteractionResponseType.ChannelMessageWithSource,
-						data: {
-							content: "Hello World!"
-						}
-					} satisfies APIInteractionResponse)
-				}
+				case "astolfo":
+					try {
+						const interactionResponse = await handleAstolfoApplicationCommand(interaction, request, env)
+						return new JsonResponse(interactionResponse)
+					} catch (error: unknown) {
+						return new JsonResponse({
+							type: InteractionResponseType.ChannelMessageWithSource,
+							data: {
+								content: `Unable fetch your image 😭\n\n\`\`\`${error?.toString() ?? "N/A"}\`\`\``
+							}
+						} satisfies APIInteractionResponse)
+					}
 
 				default:
 					throw new Error(`Unknown Discord interaction (application command) name '${interactionName}'!`)

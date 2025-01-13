@@ -10,6 +10,8 @@ preview_urls = false
 
 # Environment variables
 [vars]
+ASTOLFO_ROCKS_API_BASE_URL = "https://astolfo.rocks/api"
+DISCORD_API_BASE_URL = "https://discord.com/api/v10"
 DISCORD_APPLICATION_ID = "1328444943085080607"
 DISCORD_APPLICATION_INTERACTIONS_PUBLIC_KEY = "29eb91f9522ea6ca1d4bfee2cd315416fa728bc0a67b0b6bf22a87e3d2829e9a"
 

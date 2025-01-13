@@ -3,7 +3,8 @@ import { AutoRouter } from "itty-router"
 import { ErrorResponse, JsonResponse } from "~/classes/response"
 import { extractRequest } from "~/helpers/request"
 import { registerIndexRoute } from "~/routes"
-import { registerDiscordInteractionRoute } from "~/routes/discord/interaction"
+import { registerHandleDiscordInteractionRoute } from "~/routes/discord/interaction"
+import { registerRegisterDiscordApplicationCommandsRoute } from "./routes/discord/register"
 
 // eslint-disable-next-line new-cap
 export const router = AutoRouter({
@@ -18,7 +19,8 @@ export const router = AutoRouter({
 })
 
 registerIndexRoute(router) // GET /
-registerDiscordInteractionRoute(router) // POST /discord/interaction
+registerHandleDiscordInteractionRoute(router) // POST /discord/interaction
+registerRegisterDiscordApplicationCommandsRoute(router) // POST /discord/register
 
 // Catch-all
 router.all(
