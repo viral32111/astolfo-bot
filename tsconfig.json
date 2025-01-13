@@ -1,0 +1,82 @@
+{
+	"compilerOptions": {
+		// Input
+		"baseUrl": "source",
+
+		// ECMA Standard
+		"module": "ES2022",
+		"target": "ES2021",
+		"lib": ["ES2021"],
+
+		// Framework support
+		"composite": true,
+		"types": ["@cloudflare/workers-types", "node"],
+		"jsx": "react-jsx", // Why does Wrangler add this?
+
+		// Code style & best practices
+		"strict": true,
+		"alwaysStrict": true,
+		"noImplicitAny": true,
+		"noImplicitThis": true,
+		"noImplicitReturns": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noFallthroughCasesInSwitch": true,
+		"noUncheckedIndexedAccess": true,
+		"noImplicitOverride": true,
+		"noPropertyAccessFromIndexSignature": true,
+		"strictNullChecks": true,
+		"strictFunctionTypes": true,
+		"strictBindCallApply": true,
+		"strictPropertyInitialization": true,
+		"useDefineForClassFields": true,
+		"downlevelIteration": false,
+		"allowUnreachableCode": false,
+		"allowArbitraryExtensions": false,
+		"allowUnusedLabels": false,
+		"noUncheckedSideEffectImports": true,
+
+		// File imports
+		"moduleResolution": "Bundler",
+		"moduleDetection": "force",
+		"esModuleInterop": true,
+		"allowImportingTsExtensions": true,
+		"allowSyntheticDefaultImports": true,
+		"forceConsistentCasingInFileNames": true,
+		"verbatimModuleSyntax": true,
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"skipLibCheck": true,
+		"paths": {
+			"~/*": ["*"] // Home-style imports
+		},
+
+		// Output
+		"noEmit": true, // We use Cloudflare Wrangler
+		"outDir": "dist",
+		"declarationDir": "dist",
+		"tsBuildInfoFile": "dist/.tsbuildinfo",
+		"sourceRoot": "/",
+		"sourceMap": true,
+		"inlineSources": true,
+		"inlineSourceMap": false,
+		"declaration": true,
+		"declarationMap": true,
+		"noEmitOnError": true,
+		"removeComments": true,
+		"incremental": true,
+		"newLine": "lf",
+
+		// Ease debugging
+		"pretty": true,
+		"listFiles": false,
+		"listEmittedFiles": true,
+		"noErrorTruncation": true, // Full types on hover - https://stackoverflow.com/a/53131824
+
+		// Prevent vanilla JavaScript
+		"checkJs": false,
+		"allowJs": false
+	},
+	"include": ["source/**/*.ts", "**/*.config.ts", "eslint.d.ts"],
+	"exclude": ["node_modules", "dist", "**/*.js", "**/*.config.js"]
+}

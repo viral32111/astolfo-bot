@@ -1,0 +1,18 @@
+{
+	"printWidth": 160,
+
+	"tabWidth": 4,
+	"useTabs": true,
+
+	"semi": false,
+	"trailingComma": "none",
+	"arrowParens": "avoid",
+
+	"singleQuote": false,
+	"quoteProps": "consistent",
+
+	"bracketSpacing": true,
+	"bracketSameLine": true,
+
+	"endOfLine": "lf"
+}

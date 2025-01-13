@@ -1,0 +1,14 @@
+#:schema node_modules/wrangler/config-schema.json
+
+name = "astolfo-bot"
+compatibility_date = "2025-01-13"
+main = "source/index.ts"
+
+# Local development
+[dev]
+ip = "127.0.0.1"
+port = 8787
+
+# Workers Logs
+[observability]
+enabled = true

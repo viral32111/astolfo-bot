@@ -1,0 +1,10 @@
+# Ignore everything by default
+/*
+
+# Tidy source code
+!source/
+
+# Tidy configuration files
+!*.config.ts
+!*.config.js
+!*.json

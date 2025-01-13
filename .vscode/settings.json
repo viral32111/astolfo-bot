@@ -1,0 +1,85 @@
+{
+	// Title
+	"window.title": "Astolfo Bot",
+
+	// Tidy when saving
+	"editor.formatOnSave": true,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.codeActionsOnSave": {
+		"source.organizeImports": "explicit",
+		"source.removeUnusedImports": "explicit",
+		"source.fixAll.eslint": "always"
+	},
+
+	// Rewrite imports when moving files
+	"typescript.updateImportsOnFileMove.enabled": "always",
+
+	// Indent with tabs by default
+	"editor.detectIndentation": true,
+	"editor.insertSpaces": false,
+	"editor.indentSize": "tabSize",
+	"editor.tabSize": 4,
+
+	// Force file format
+	"files.eol": "\n",
+	"files.encoding": "utf8",
+	"files.insertFinalNewline": true,
+
+	// Force file type associations
+	"files.associations": {
+		"**/.*.vars": "dotenv"
+	},
+
+	// Show & trim unnecessary whitespace
+	"editor.renderWhitespace": "boundary",
+	"editor.trimAutoWhitespace": true,
+	"files.trimTrailingWhitespace": true,
+	"files.trimFinalNewlines": true,
+
+	// Close strings, comments & brackets
+	"editor.autoClosingQuotes": "always",
+	"editor.autoClosingComments": "always",
+	"editor.autoClosingBrackets": "always",
+
+	// Show parameter names & enum values
+	"editor.inlayHints.enabled": "on",
+	"typescript.inlayHints.parameterNames.enabled": "all",
+	"typescript.inlayHints.enumMemberValues.enabled": true,
+
+	// Full types on hover - https://stackoverflow.com/a/78813079
+	"typescript.experimental.expandableHover": true,
+
+	// Highlight matching brackets
+	"editor.bracketPairColorization.enabled": true,
+
+	// Show color picker next to RGB/hex codes
+	"editor.colorDecorators": true,
+
+	// Smoother animations
+	"editor.smoothScrolling": true,
+	"editor.cursorBlinking": "smooth",
+	"editor.cursorStyle": "line-thin",
+	"editor.cursorSmoothCaretAnimation": "on",
+	"terminal.integrated.smoothScrolling": true,
+	"workbench.list.smoothScrolling": true,
+
+	// IntelliSense
+	"editor.inlineSuggest.enabled": true,
+
+	// Pin tabs
+	"workbench.editor.pinnedTabsOnSeparateRow": true,
+	"workbench.editor.preventPinnedEditorClose": "never",
+	"workbench.editor.pinnedTabSizing": "normal",
+	"workbench.editor.showTabs": "multiple",
+
+	// Support ESLint v9 TypeScript configuration files
+	"eslint.useFlatConfig": true,
+	"eslint.lintTask.enable": true,
+
+	// Check code, configs & docs for spelling mistakes
+	"cSpell.language": "en-GB",
+	"cSpell.files": ["**/*.ts", "*.config.ts", "*.config.js", "**/*.md", "**/*.txt"],
+	"cSpell.words": [
+		"astolfo"
+	]
+}

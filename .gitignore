@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# Yarn
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# Cloudflare Wrangler
+.wrangler/
+source/types/worker.d.ts
+.dev.vars

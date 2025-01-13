@@ -1,0 +1,12 @@
+{
+	"recommendations": [
+		"mikestead.dotenv", // .env
+		"dbaeumer.vscode-eslint", // ESLint
+		"esbenp.prettier-vscode", // Prettier
+		"bradlc.vscode-tailwindcss", // Tailwind CSS
+		"SuhelMakkad.shadcn-ui", // shadcn/ui
+		"streetsidesoftware.code-spell-checker", // Spell Checker
+		"VisualStudioExptTeam.vscodeintellicode", // IntelliCode
+		"oven.bun-vscode" // Bun
+	]
+}
