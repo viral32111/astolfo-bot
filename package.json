@@ -8,9 +8,16 @@
 		"pretty": "find source -type f -exec prettier --write {} \\;",
 		"dev": "wrangler dev",
 		"types": "wrangler types source/types/worker.d.ts",
-		"build": "wrangler build",
-		"publish": "wrangler publish",
+		"build": "run deploy --dry-run && rm dist/README.md",
+		"deploy": "run lint && tsc && wrangler deploy --outdir dist --minify",
+		"secret": "wrangler secret put",
 		"logs": "wrangler tail --format pretty"
+	},
+	"dependencies": {
+		"discord-api-types": "^0.37.115",
+		"discord-interactions": "^4.1.0",
+		"itty-router": "^5.0.18",
+		"stacktrace-parser": "^0.1.10"
 	},
 	"devDependencies": {
 		"@cloudflare/workers-types": "^4.20250109.0",

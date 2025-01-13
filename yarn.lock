@@ -2186,12 +2186,16 @@ __metadata:
     "@eslint/js": "npm:^9.18.0"
     "@stylistic/eslint-plugin": "npm:^2.13.0"
     "@types/node": "npm:^22.10.5"
+    discord-api-types: "npm:^0.37.115"
+    discord-interactions: "npm:^4.1.0"
     eslint: "npm:^9.18.0"
     eslint-config-prettier: "npm:^10.0.1"
     eslint-plugin-prettier: "npm:^5.2.1"
+    itty-router: "npm:^5.0.18"
     jiti: "npm:^2.4.2"
     prettier: "npm:^3.4.2"
     prettier-eslint: "npm:^16.3.0"
+    stacktrace-parser: "npm:^0.1.10"
     typescript: "npm:^5.7.3"
     typescript-eslint: "npm:^8.20.0"
     wrangler: "npm:^3.101.0"
@@ -2424,6 +2428,20 @@ __metadata:
   dependencies:
     path-type: "npm:^4.0.0"
   checksum: 10c0/dcac00920a4d503e38bb64001acb19df4efc14536ada475725e12f52c16777afdee4db827f55f13a908ee7efc0cb282e2e3dbaeeb98c0993dd93d1802d3bf00c
+  languageName: node
+  linkType: hard
+
+"discord-api-types@npm:^0.37.115":
+  version: 0.37.115
+  resolution: "discord-api-types@npm:0.37.115"
+  checksum: 10c0/71ea6a95b771b579b487e3a5f16302c4bd90daa496d4890dbde56b9744064aa1b3d709f3a50771ec57154f345b6cde18a5eb3b5b8be1f30a3f1b37b34b82b50a
+  languageName: node
+  linkType: hard
+
+"discord-interactions@npm:^4.1.0":
+  version: 4.1.0
+  resolution: "discord-interactions@npm:4.1.0"
+  checksum: 10c0/88aa0272e1a769f3abe7a63fad7e9f2d9d0fa191082280aaa1012ff28eb3761e3f878f251d693d7437572d45bd00de4f0af90b0370e56cd80c01b3f5bcb82d2b
   languageName: node
   linkType: hard
 
@@ -3278,6 +3296,13 @@ __metadata:
   version: 3.1.1
   resolution: "isexe@npm:3.1.1"
   checksum: 10c0/9ec257654093443eb0a528a9c8cbba9c0ca7616ccb40abd6dde7202734d96bb86e4ac0d764f0f8cd965856aacbff2f4ce23e730dc19dfb41e3b0d865ca6fdcc7
+  languageName: node
+  linkType: hard
+
+"itty-router@npm:^5.0.18":
+  version: 5.0.18
+  resolution: "itty-router@npm:5.0.18"
+  checksum: 10c0/f21afcf16135622de665b340e16262add2c35dab037c051448df8a2dd49bd83dfa1cf9323000839994157202befaa79f95bbc9e0ed106114cb9da66275ad9408
   languageName: node
   linkType: hard
 
@@ -4199,6 +4224,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"stacktrace-parser@npm:^0.1.10":
+  version: 0.1.10
+  resolution: "stacktrace-parser@npm:0.1.10"
+  dependencies:
+    type-fest: "npm:^0.7.1"
+  checksum: 10c0/f9c9cd55b0642a546e5f0516a87124fc496dcc2c082b96b156ed094c51e423314795cd1839cd4c59026349cf392d3414f54fc42165255602728588a58a9f72d3
+  languageName: node
+  linkType: hard
+
 "stacktracey@npm:^2.1.8":
   version: 2.1.8
   resolution: "stacktracey@npm:2.1.8"
@@ -4380,6 +4414,13 @@ __metadata:
   version: 0.20.2
   resolution: "type-fest@npm:0.20.2"
   checksum: 10c0/dea9df45ea1f0aaa4e2d3bed3f9a0bfe9e5b2592bddb92eb1bf06e50bcf98dbb78189668cd8bc31a0511d3fc25539b4cd5c704497e53e93e2d40ca764b10bfc3
+  languageName: node
+  linkType: hard
+
+"type-fest@npm:^0.7.1":
+  version: 0.7.1
+  resolution: "type-fest@npm:0.7.1"
+  checksum: 10c0/ce6b5ef806a76bf08d0daa78d65e61f24d9a0380bd1f1df36ffb61f84d14a0985c3a921923cf4b97831278cb6fa9bf1b89c751df09407e0510b14e8c081e4e0f
   languageName: node
   linkType: hard
 

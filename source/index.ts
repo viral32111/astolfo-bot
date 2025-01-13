@@ -1,34 +1,40 @@
-// eslint-disable-next-line @typescript-eslint/require-await
-const fetch: ExportedHandlerFetchHandler<Env> = async (request, env, context): Promise<Response> => {
-	console.info("Hello Worker!")
+import { AutoRouter } from "itty-router"
 
-	const requestUrl = new URL(request.url)
-	const requestHeaders = Object.fromEntries(Array.from(request.headers.entries()).map(([key, value]) => [key.toLowerCase(), value]))
-	const requestParameters = Object.fromEntries(Array.from(requestUrl.searchParams.entries()).map(([key, value]) => [key.toLowerCase(), value]))
+import { ErrorResponse, JsonResponse } from "~/classes/response"
+import { extractRequest } from "~/helpers/request"
+import { registerIndexRoute } from "~/routes"
+import { registerDiscordInteractionRoute } from "~/routes/discord/interaction"
 
-	return new Response(
-		JSON.stringify({
-			request: {
-				method: request.method.toUpperCase(),
-				url: {
-					schema: requestUrl.protocol.substring(0, requestUrl.protocol.length - 1),
-					host: requestUrl.hostname,
-					port: requestUrl.port,
-					path: requestUrl.pathname,
-					parameters: requestParameters
-				},
-				headers: requestHeaders
-			},
-			env,
-			context
-		}),
-		{
-			status: 200,
-			headers: {
-				"content-type": "application/json"
-			}
+// eslint-disable-next-line new-cap
+export const router = AutoRouter({
+	catch: (error: unknown) => new ErrorResponse(error),
+	finally: [
+		(response: Response) => {
+			response.headers.set("From", "contact@viral32111.com")
+			response.headers.set("X-Powered-By", "Cloudflare Workers")
+			response.headers.set("X-GitHub-URL", "https://github.com/viral32111/astolfo-bot")
 		}
-	)
-}
+	]
+})
 
-export default { fetch } satisfies ExportedHandler<Env>
+registerIndexRoute(router) // GET /
+registerDiscordInteractionRoute(router) // POST /discord/interaction
+
+// Catch-all
+router.all(
+	"*",
+	request =>
+		new JsonResponse(
+			{
+				status: 404,
+				error: {
+					request: extractRequest(request)
+				}
+			},
+			{
+				status: 404
+			}
+		)
+)
+
+export default { fetch: router.fetch } satisfies ExportedHandler<Env>

@@ -136,18 +136,7 @@ export default typescript.config({
 			"no-template-curly-in-string": "warn",
 			"no-unreachable": "warn",
 			"no-unused-private-class-members": "warn",
-			"no-unused-vars": [
-				"warn",
-				{
-					vars: "all",
-					varsIgnorePattern: "^_+",
-					args: "all",
-					argsIgnorePattern: "^_+",
-					caughtErrors: "all",
-					caughtErrorsIgnorePattern: "^_+",
-					ignoreRestSiblings: false
-				}
-			],
+			"no-unused-vars": "off", // Seems to be broken?
 			"no-useless-backreference": "warn",
 			"no-else-return": [
 				"warn",

@@ -14,3 +14,6 @@ node_modules/
 .wrangler/
 source/types/worker.d.ts
 .dev.vars
+
+# Build
+dist/

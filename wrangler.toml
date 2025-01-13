@@ -1,14 +1,27 @@
 #:schema node_modules/wrangler/config-schema.json
 
+# Meta
 name = "astolfo-bot"
-compatibility_date = "2025-01-13"
+compatibility_date = "2025-01-13" # https://developers.cloudflare.com/workers/configuration/compatibility-dates/
+
+# Deployment
 main = "source/index.ts"
+preview_urls = false
+
+# Environment variables
+[vars]
+DISCORD_APPLICATION_ID = "1328444943085080607"
+DISCORD_APPLICATION_INTERACTIONS_PUBLIC_KEY = "29eb91f9522ea6ca1d4bfee2cd315416fa728bc0a67b0b6bf22a87e3d2829e9a"
+
+# .dev.vars
+# DISCORD_APPLICATION_BOT_TOKEN = ""
+# DISCORD_APPLICATION_OAUTH2_SECRET = ""
 
 # Local development
 [dev]
 ip = "127.0.0.1"
 port = 8787
 
-# Workers Logs
+# Logs
 [observability]
 enabled = true

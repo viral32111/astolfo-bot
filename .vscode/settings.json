@@ -80,6 +80,8 @@
 	"cSpell.language": "en-GB",
 	"cSpell.files": ["**/*.ts", "*.config.ts", "*.config.js", "**/*.md", "**/*.txt"],
 	"cSpell.words": [
-		"astolfo"
+		"astolfo",
+		"itty",
+		"vars"
 	]
 }
