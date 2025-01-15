@@ -27,7 +27,7 @@
 
 	// Force file type associations
 	"files.associations": {
-		"**/.*.vars": "dotenv"
+		"**/.*.vars*": "dotenv"
 	},
 
 	// Show & trim unnecessary whitespace
