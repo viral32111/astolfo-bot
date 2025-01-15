@@ -58,7 +58,7 @@ jobs:
       contents: read
     environment:
       name: cloudflare-workers
-      url: ${{ steps.deploy-to-cloudflare-workers.outputs.deployment-url }}
+      url: https://astolfo-bot.viral32111.workers.dev
     concurrency:
       group: cloudflare-workers
       cancel-in-progress: false
@@ -74,18 +74,11 @@ jobs:
       - name: Setup Yarn
         run: corepack enable
 
-      - name: Download artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: ${{ env.ARTIFACT_NAME }}
-          path: dist
+      - name: Install dependencies
+        run: yarn install --immutable
 
-      - name: Deploy to Cloudflare Wiorkers
-        uses: cloudflare/wrangler-action@v3
-        id: deploy-to-cloudflare-workers
-        with:
-          command: deploy --no-bundle
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      - name: Deploy to Cloudflare Workers
+        run: yarn deploy
 
   release:
     name: Create release
