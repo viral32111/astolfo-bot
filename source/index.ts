@@ -1,10 +1,12 @@
-import { AutoRouter } from "itty-router"
+import { AutoRouter, type IRequest } from "itty-router"
 
 import { ErrorResponse, JsonResponse } from "~/classes/response"
 import { extractRequest } from "~/helpers/request"
-import { registerIndexRoute } from "~/routes"
+import { registerRedirectRoute } from "~/routes"
 import { registerHandleDiscordInteractionRoute } from "~/routes/discord/interaction"
 import { registerRegisterDiscordApplicationCommandsRoute } from "./routes/discord/register"
+
+const SECRET_NAMES = ["DISCORD_APPLICATION_BOT_TOKEN", "DISCORD_APPLICATION_OAUTH2_SECRET"]
 
 // eslint-disable-next-line new-cap
 export const router = AutoRouter({
@@ -18,25 +20,35 @@ export const router = AutoRouter({
 	]
 })
 
-registerIndexRoute(router) // GET /
+registerRedirectRoute(router) // GET /
 registerHandleDiscordInteractionRoute(router) // POST /discord/interaction
 registerRegisterDiscordApplicationCommandsRoute(router) // POST /discord/register
 
 // Catch-all
-router.all(
-	"*",
-	request =>
-		new JsonResponse(
-			{
-				status: 404,
-				error: {
-					request: extractRequest(request)
-				}
-			},
-			{
-				status: 404
+router.all<IRequest, [Env, { props: object }]>("*", (request, env, context): Response => {
+	const environmentVariables = Object.fromEntries(
+		Object.entries(env)
+			.map<[string, string]>(([name, value]: [string, string]) => {
+				const _name = name.toUpperCase()
+				if (SECRET_NAMES.includes(name)) return [_name, "*".repeat(Math.floor(Math.random() * 11) + 15)]
+				return [name.toUpperCase(), value]
+			})
+			.toSorted(([a], [b]) => a.localeCompare(b))
+	)
+
+	return new JsonResponse(
+		{
+			status: 404,
+			debug: {
+				request: extractRequest(request),
+				env: environmentVariables,
+				context
 			}
-		)
-)
+		},
+		{
+			status: 404
+		}
+	)
+})
 
 export default { fetch: router.fetch } satisfies ExportedHandler<Env>
