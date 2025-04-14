@@ -1150,7 +1150,7 @@ __metadata:
     "@eslint/js": "npm:^9.24.0"
     "@stylistic/eslint-plugin": "npm:^4.2.0"
     "@types/node": "npm:^22.14.1"
-    discord-api-types: "npm:^0.37.119"
+    discord-api-types: "npm:^0.37.120"
     discord-interactions: "npm:^4.1.1"
     eslint: "npm:^9.24.0"
     eslint-config-prettier: "npm:^10.1.1"
@@ -1382,10 +1382,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"discord-api-types@npm:^0.37.119":
-  version: 0.37.119
-  resolution: "discord-api-types@npm:0.37.119"
-  checksum: 10c0/ae38b5b164ec8c9dbcd114917b014e20f7e50d861b2ac99658d9b9e5e2567414b9f357dae1683d0c90db21c5a19b79318c9ac7420802ed18a783481c57054f6a
+"discord-api-types@npm:^0.37.120":
+  version: 0.37.120
+  resolution: "discord-api-types@npm:0.37.120"
+  checksum: 10c0/bb9e2c7d35c94fedfd38d58b15969a73644ee9d6a593f0ddced3d1ba43e87b4696e66ce73c8775626bb7b8d02e6890c02d2bb4aca1a9b24f5f4c36b12c1beaa8
   languageName: node
   linkType: hard
 
