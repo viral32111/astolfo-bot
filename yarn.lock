@@ -62,10 +62,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cloudflare/workers-types@npm:^4.20250414.0":
-  version: 4.20250414.0
-  resolution: "@cloudflare/workers-types@npm:4.20250414.0"
-  checksum: 10c0/a5cfdaca73f48ea16c0dc46aa7fe9ae6cce1d2b6172824c06d4813cc69e3f590e33b263a3f0345b4f68acb0565681767547390ee431d3a18f1da000d70bd0624
+"@cloudflare/workers-types@npm:^4.20250428.0":
+  version: 4.20250428.0
+  resolution: "@cloudflare/workers-types@npm:4.20250428.0"
+  checksum: 10c0/5929f87d74bacc493cb7ee6cfa21a767a86bc08e824d033b42b1e642d332172b1cea182fa3be35084cce68bce5ab31dfcc00765038f5a5af28f5950ecebe91db
   languageName: node
   linkType: hard
 
@@ -1153,7 +1153,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "astolfo-bot@workspace:."
   dependencies:
-    "@cloudflare/workers-types": "npm:^4.20250414.0"
+    "@cloudflare/workers-types": "npm:^4.20250428.0"
     "@eslint/js": "npm:^9.25.1"
     "@stylistic/eslint-plugin": "npm:^4.2.0"
     "@types/node": "npm:^22.15.3"
