@@ -15,7 +15,7 @@
 		"logs": "wrangler tail --format pretty"
 	},
 	"dependencies": {
-		"discord-api-types": "^0.38.9",
+		"discord-api-types": "^0.38.11",
 		"discord-interactions": "^4.3.0",
 		"itty-router": "^5.0.18",
 		"stacktrace-parser": "^0.1.11"
