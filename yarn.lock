@@ -1154,7 +1154,7 @@ __metadata:
     stacktrace-parser: "npm:^0.1.11"
     typescript: "npm:^5.8.3"
     typescript-eslint: "npm:^8.35.0"
-    wrangler: "npm:^4.20.5"
+    wrangler: "npm:^4.23.0"
   languageName: unknown
   linkType: soft
 
@@ -2427,9 +2427,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"miniflare@npm:4.20250617.3":
-  version: 4.20250617.3
-  resolution: "miniflare@npm:4.20250617.3"
+"miniflare@npm:4.20250617.5":
+  version: 4.20250617.5
+  resolution: "miniflare@npm:4.20250617.5"
   dependencies:
     "@cspotcode/source-map-support": "npm:0.8.1"
     acorn: "npm:8.14.0"
@@ -2445,7 +2445,7 @@ __metadata:
     zod: "npm:3.22.3"
   bin:
     miniflare: bootstrap.js
-  checksum: 10c0/ed4ede8ed849819c27ed3ce4187c777cef822a6733861120db0bac5a33acce35927240babd4ca669a5d6ce56a735424e25df33af4d66d805d7ed41c3819d898e
+  checksum: 10c0/32e09f15a6c2b51e81cd87460e687a63469a71eb3b3de739b43c8b892bfea94d71ec5a6c74b6144d35ca1fc727d376bb8d7a6a8ccf67f8a5be09923e44090781
   languageName: node
   linkType: hard
 
@@ -3475,16 +3475,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"wrangler@npm:^4.20.5":
-  version: 4.20.5
-  resolution: "wrangler@npm:4.20.5"
+"wrangler@npm:^4.23.0":
+  version: 4.23.0
+  resolution: "wrangler@npm:4.23.0"
   dependencies:
     "@cloudflare/kv-asset-handler": "npm:0.4.0"
     "@cloudflare/unenv-preset": "npm:2.3.3"
     blake3-wasm: "npm:2.1.5"
     esbuild: "npm:0.25.4"
     fsevents: "npm:~2.3.2"
-    miniflare: "npm:4.20250617.3"
+    miniflare: "npm:4.20250617.5"
     path-to-regexp: "npm:6.3.0"
     unenv: "npm:2.0.0-rc.17"
     workerd: "npm:1.20250617.0"
@@ -3499,7 +3499,7 @@ __metadata:
   bin:
     wrangler: bin/wrangler.js
     wrangler2: bin/wrangler.js
-  checksum: 10c0/8f8d397b6878b5b767abc98ed6cfcb5119aef5dcb7db25832cf1f056cf378afa79efe787668f4caf8bc6f88e88253dc1676d05e8ef2d820cd964dbde1b529a55
+  checksum: 10c0/798abc0d4b575ada5813a044da7f5d20767766dd791ce3bb6634391c57143a4750d3e430c20ba037d7551cc1f3a32c4252dce5ecf0196cbaefabbf80c8d7b366
   languageName: node
   linkType: hard
 
