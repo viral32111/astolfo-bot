@@ -17,7 +17,7 @@
 	"dependencies": {
 		"discord-api-types": "^0.38.16",
 		"discord-interactions": "^4.3.0",
-		"itty-router": "^5.0.18",
+		"itty-router": "^5.0.20",
 		"stacktrace-parser": "^0.1.11"
 	},
 	"devDependencies": {
