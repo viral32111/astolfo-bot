@@ -1173,7 +1173,7 @@ __metadata:
     eslint: "npm:^9.32.0"
     eslint-config-prettier: "npm:^10.1.8"
     eslint-plugin-prettier: "npm:^5.5.3"
-    itty-router: "npm:^5.0.20"
+    itty-router: "npm:^5.0.21"
     jiti: "npm:^2.5.1"
     prettier: "npm:^3.6.2"
     prettier-eslint: "npm:^16.4.2"
@@ -2264,10 +2264,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"itty-router@npm:^5.0.20":
-  version: 5.0.20
-  resolution: "itty-router@npm:5.0.20"
-  checksum: 10c0/febd8cc035b1a7d8c0f17f1535726a5004763f195c89f5dad3dfcd4241a320a5ecc0d19061ec1d983b06d5f8dc244e1e7160c85f632faa2a94201421729b2dcd
+"itty-router@npm:^5.0.21":
+  version: 5.0.21
+  resolution: "itty-router@npm:5.0.21"
+  checksum: 10c0/a630a85d6c090824f6ef3f24857fdb786f8e41a667fba6085706204ba281cf4d4ee2acc7d05e05044046e417e856b959c3e5eb0eb97aaba183b2cf52b8ef67b1
   languageName: node
   linkType: hard
 
