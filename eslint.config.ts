@@ -12,13 +12,7 @@ import typescript from "typescript-eslint"
 // https://typescript-eslint.io/packages/typescript-eslint#config
 export default typescript.config({
 	// Based upon third-party configurations
-	extends: [
-		javascript.configs.recommended,
-		typescript.configs.strictTypeChecked,
-		typescript.configs.stylisticTypeChecked,
-		stylistic.configs["all-flat"],
-		prettier
-	],
+	extends: [javascript.configs.recommended, typescript.configs.strictTypeChecked, typescript.configs.stylisticTypeChecked, stylistic.configs.all, prettier],
 
 	// Load third-party plugins
 	plugins: {
@@ -695,7 +689,7 @@ export default typescript.config({
 			"@stylistic/brace-style": "warn",
 			"@stylistic/comma-dangle": "warn",
 			"@stylistic/comma-spacing": "warn",
-			"@stylistic/func-call-spacing": "warn",
+			// "@stylistic/func-call-spacing": "warn",
 			"@stylistic/key-spacing": "warn",
 			"@stylistic/keyword-spacing": "warn",
 			"@stylistic/member-delimiter-style": [
