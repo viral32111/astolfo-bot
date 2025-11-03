@@ -1200,7 +1200,7 @@ __metadata:
     stacktrace-parser: "npm:^0.1.11"
     typescript: "npm:^5.9.3"
     typescript-eslint: "npm:^8.46.2"
-    wrangler: "npm:^4.45.0"
+    wrangler: "npm:^4.45.3"
   languageName: unknown
   linkType: soft
 
@@ -3490,9 +3490,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"wrangler@npm:^4.45.0":
-  version: 4.45.0
-  resolution: "wrangler@npm:4.45.0"
+"wrangler@npm:^4.45.3":
+  version: 4.45.3
+  resolution: "wrangler@npm:4.45.3"
   dependencies:
     "@cloudflare/kv-asset-handler": "npm:0.4.0"
     "@cloudflare/unenv-preset": "npm:2.7.8"
@@ -3514,7 +3514,7 @@ __metadata:
   bin:
     wrangler: bin/wrangler.js
     wrangler2: bin/wrangler.js
-  checksum: 10c0/4c268e279329c1e07b589963666a39327602f3f95324717069162118f0ee4a40cb9f231b20309234d30f69b81a8a8925c8327d8bbdcf5a150f4cd059baa43652
+  checksum: 10c0/8f7e3291dcf05c6fb65ded71b3534b04b13a04df68021ee8ae18788121cde7e7eefc1b13e02f91091d349a031bbb24779ad27289e4e820eff583069eb71c0f34
   languageName: node
   linkType: hard
 
