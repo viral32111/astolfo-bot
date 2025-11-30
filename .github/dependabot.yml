@@ -6,14 +6,12 @@ updates:
     schedule:
       interval: weekly
       day: saturday
-      time: 09:00
+      time: "09:00"
       timezone: Europe/London
     groups:
       default:
         patterns:
           - "*"
-    commit-message:
-      include: scope
 
   # package.json
   - package-ecosystem: npm
@@ -21,7 +19,7 @@ updates:
     schedule:
       interval: weekly
       day: saturday
-      time: 09:00
+      time: "09:00"
       timezone: Europe/London
     groups:
       default:
