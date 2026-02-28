@@ -17,23 +17,23 @@
 	"dependencies": {
 		"discord-api-types": "^0.38.40",
 		"discord-interactions": "^4.4.0",
-		"itty-router": "^5.0.22",
+		"itty-router": "^5.0.23",
 		"stacktrace-parser": "^0.1.11"
 	},
 	"devDependencies": {
-		"@cloudflare/workers-types": "^4.20260228.0",
+		"@cloudflare/workers-types": "^4.20260228.1",
 		"@eslint/js": "^10.0.1",
 		"@stylistic/eslint-plugin": "^5.9.0",
-		"@types/node": "^25.3.0",
-		"eslint": "^10.0.1",
+		"@types/node": "^25.3.2",
+		"eslint": "^10.0.2",
 		"eslint-config-prettier": "^10.1.8",
 		"eslint-plugin-prettier": "^5.5.5",
 		"jiti": "^2.6.1",
 		"prettier": "^3.8.1",
 		"prettier-eslint": "^16.4.2",
 		"typescript": "^5.9.3",
-		"typescript-eslint": "^8.56.0",
-		"wrangler": "^4.67.0"
+		"typescript-eslint": "^8.56.1",
+		"wrangler": "^4.69.0"
 	},
 	"engines": {
 		"node": ">=23.6.0",
