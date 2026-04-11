@@ -15,25 +15,25 @@
 		"logs": "wrangler tail --format pretty"
 	},
 	"dependencies": {
-		"discord-api-types": "^0.38.44",
+		"discord-api-types": "^0.38.45",
 		"discord-interactions": "^4.4.0",
 		"itty-router": "^5.0.23",
 		"stacktrace-parser": "^0.1.11"
 	},
 	"devDependencies": {
-		"@cloudflare/workers-types": "^4.20260404.1",
+		"@cloudflare/workers-types": "^4.20260411.1",
 		"@eslint/js": "^10.0.1",
 		"@stylistic/eslint-plugin": "^5.10.0",
-		"@types/node": "^25.5.2",
+		"@types/node": "^25.6.0",
 		"eslint": "^10.2.0",
 		"eslint-config-prettier": "^10.1.8",
 		"eslint-plugin-prettier": "^5.5.5",
 		"jiti": "^2.6.1",
-		"prettier": "^3.8.1",
+		"prettier": "^3.8.2",
 		"prettier-eslint": "^16.4.2",
 		"typescript": "^6.0.2",
-		"typescript-eslint": "^8.58.0",
-		"wrangler": "^4.80.0"
+		"typescript-eslint": "^8.58.1",
+		"wrangler": "^4.81.1"
 	},
 	"engines": {
 		"node": ">=23.6.0",
