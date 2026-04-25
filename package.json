@@ -21,7 +21,7 @@
 		"stacktrace-parser": "^0.1.11"
 	},
 	"devDependencies": {
-		"@cloudflare/workers-types": "^4.20260418.1",
+		"@cloudflare/workers-types": "^4.20260425.1",
 		"@eslint/js": "^10.0.1",
 		"@stylistic/eslint-plugin": "^5.10.0",
 		"@types/node": "^25.6.0",
@@ -32,8 +32,8 @@
 		"prettier": "^3.8.3",
 		"prettier-eslint": "^16.4.2",
 		"typescript": "^6.0.3",
-		"typescript-eslint": "^8.58.2",
-		"wrangler": "^4.83.0"
+		"typescript-eslint": "^8.59.0",
+		"wrangler": "^4.85.0"
 	},
 	"engines": {
 		"node": ">=23.6.0",
