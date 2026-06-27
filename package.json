@@ -33,7 +33,7 @@
 		"prettier-eslint": "^17.1.1",
 		"typescript": "^6.0.3",
 		"typescript-eslint": "^8.61.1",
-		"wrangler": "^4.103.0"
+		"wrangler": "^4.105.0"
 	},
 	"engines": {
 		"node": ">=23.6.0",
