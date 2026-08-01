@@ -60,10 +60,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cloudflare/workers-types@npm:^5.20260724.1":
-  version: 5.20260724.1
-  resolution: "@cloudflare/workers-types@npm:5.20260724.1"
-  checksum: 10c0/2ae875258e64a05cba8635905b359dd82d74dffe26a5a25f891c7739713ce96e778bb1bd0f91d5102b076411d33c45604c1120ba59065eeedf890a443b793d27
+"@cloudflare/workers-types@npm:^5.20260729.1":
+  version: 5.20260729.1
+  resolution: "@cloudflare/workers-types@npm:5.20260729.1"
+  checksum: 10c0/5dd322cfb537d9dc73ca47b92d704af2b235db900fe824df80597ae0fba77f30858b562ee22bb8a2ca69ee9548dbeafb54c380935a0ba7d33ac9b0a57cd30718
   languageName: node
   linkType: hard
 
@@ -830,12 +830,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^26.1.1":
-  version: 26.1.1
-  resolution: "@types/node@npm:26.1.1"
+"@types/node@npm:^26.1.2":
+  version: 26.1.2
+  resolution: "@types/node@npm:26.1.2"
   dependencies:
     undici-types: "npm:~8.3.0"
-  checksum: 10c0/25ac5093195736dd074d5027adbba85617bc951d5a41506ebd3b9073048acb7233613f3822d5f9b9447f9c0841c91f6387c46283916767e3ef79f23917452c46
+  checksum: 10c0/a45503222c7db8f374afd5c9381db63dd95b6b1f703abea0890dd3d4a09eeb41da489e08a1a45baf18fe89fb77fbf310ff2789f680c490b04dafc41a60800a86
   languageName: node
   linkType: hard
 
@@ -1173,11 +1173,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "astolfo-bot@workspace:."
   dependencies:
-    "@cloudflare/workers-types": "npm:^5.20260724.1"
+    "@cloudflare/workers-types": "npm:^5.20260729.1"
     "@eslint/js": "npm:^10.0.1"
     "@stylistic/eslint-plugin": "npm:^5.10.0"
-    "@types/node": "npm:^26.1.1"
-    discord-api-types: "npm:^0.38.51"
+    "@types/node": "npm:^26.1.2"
+    discord-api-types: "npm:^0.38.52"
     discord-interactions: "npm:^4.4.0"
     eslint: "npm:^10.8.0"
     eslint-config-prettier: "npm:^10.1.8"
@@ -1189,7 +1189,7 @@ __metadata:
     stacktrace-parser: "npm:^0.1.11"
     typescript: "npm:^6.0.3"
     typescript-eslint: "npm:^8.65.0"
-    wrangler: "npm:^4.114.0"
+    wrangler: "npm:^4.115.0"
   languageName: unknown
   linkType: soft
 
@@ -1351,10 +1351,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"discord-api-types@npm:^0.38.51":
-  version: 0.38.51
-  resolution: "discord-api-types@npm:0.38.51"
-  checksum: 10c0/713749e72d3070dcd6caa2aa165f371014c8dc48d707f72881b2c2b5ae4dfd458133e7398ad47cc9ca9b90fada4a8460f5a5dc2c09700f72027f84e86c5c17ce
+"discord-api-types@npm:^0.38.52":
+  version: 0.38.52
+  resolution: "discord-api-types@npm:0.38.52"
+  checksum: 10c0/32a37c4f3050eaf432cb326a316c08cc549507e2437f2f755c787b353955b50b4314f277c363131d2b124e8cf8767a52b8c0078ec049358015041f1c134e0d7f
   languageName: node
   linkType: hard
 
@@ -2135,9 +2135,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"miniflare@npm:4.20260722.0":
-  version: 4.20260722.0
-  resolution: "miniflare@npm:4.20260722.0"
+"miniflare@npm:4.20260722.1":
+  version: 4.20260722.1
+  resolution: "miniflare@npm:4.20260722.1"
   dependencies:
     "@cspotcode/source-map-support": "npm:0.8.1"
     sharp: "npm:0.35.2"
@@ -2147,7 +2147,7 @@ __metadata:
     youch: "npm:4.1.0-beta.10"
   bin:
     miniflare: bootstrap.js
-  checksum: 10c0/229139bece405cc4d277945644289db756ad84028d21622cb2c64bcfcd97f0fbde74ed07c11b8da39fdb1f7c6f28fee42bc97b86265334d4ba0f93a99001fef1
+  checksum: 10c0/04caa4b8a9087868a5287c10f9abe037e785cfd258176e67b9bdd341c408c8b3a8c330c863c0262e310b8da45887636cf03112ee033d8b2e13697cd364d2d0d0
   languageName: node
   linkType: hard
 
@@ -3013,16 +3013,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"wrangler@npm:^4.114.0":
-  version: 4.114.0
-  resolution: "wrangler@npm:4.114.0"
+"wrangler@npm:^4.115.0":
+  version: 4.115.0
+  resolution: "wrangler@npm:4.115.0"
   dependencies:
     "@cloudflare/kv-asset-handler": "npm:0.5.0"
     "@cloudflare/unenv-preset": "npm:2.16.1"
     blake3-wasm: "npm:2.1.5"
     esbuild: "npm:0.28.1"
     fsevents: "npm:2.3.3"
-    miniflare: "npm:4.20260722.0"
+    miniflare: "npm:4.20260722.1"
     path-to-regexp: "npm:6.3.0"
     unenv: "npm:2.0.0-rc.24"
     workerd: "npm:1.20260722.1"
@@ -3038,7 +3038,7 @@ __metadata:
     cf-wrangler: bin/cf-wrangler.js
     wrangler: bin/wrangler.js
     wrangler2: bin/wrangler.js
-  checksum: 10c0/566bb53daeea5f5f21085bd5d53c824b2128fda2d59547968b37ae866a96f755bb33fd9d7c3552a0223fc7d0465773bd966b15fdf858cda34cf0caaff0bb87e0
+  checksum: 10c0/426146cedd16de2c060985e013cb0134aa5f52a63c8d270361a041cccf7e5dc4a5cbfa23429880a04a0bdbb5a983281407b3115353d9f587190c6f807e3ff188
   languageName: node
   linkType: hard
 
